@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/SharedPtr.hpp
+utility
+-
+atomic
+-
+
+/cygdrive/c/threelab/threeptr/sources/source.cpp
+SharedPtr.hpp
+-
+

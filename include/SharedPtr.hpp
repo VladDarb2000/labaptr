@@ -2,14 +2,14 @@
 #ifndef INCLUDE_HEADER_HPP_
 #define INCLUDE_HEADER_HPP_
 
-#include <utility>
+#include <utility>// для свапа надо
 #include <atomic>
 using std::size_t;
 
-template <typename T>
-class SharedPtr {
-	T *data = nullptr;
-	std::atomic<size_t>* pointersAmount = nullptr;
+template <typename T>// шаблон класса создаем
+class SharedPtr {// конструктор
+	T *data = nullptr;//
+	std::atomic<size_t>* pointersAmount = nullptr;//
 public:
 	//SharedPtr();
 	SharedPtr(T* ptr = nullptr) {
